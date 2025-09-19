@@ -7,11 +7,15 @@
       <form @submit.prevent="saveUser">
         <div class="form-group">
           <label for="name">Nombre:</label>
-          <input id="name" v-model="currentUser.name" placeholder="Nombre completo" required />
+          <input id="name" v-model="currentUser.username" placeholder="Nombre de usuario" required />
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
           <input id="email" type="email" v-model="currentUser.email" placeholder="correo@ejemplo.com" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña:</label>
+          <input id="password" type="password" v-model="currentUser.password" placeholder="Contraseña" :required="!isEditing" />
         </div>
         <div class="form-actions">
           <button type="submit" class="btn-primary">{{ isEditing ? 'Actualizar' : 'Guardar' }}</button>
@@ -25,7 +29,7 @@
       <ul v-if="users.length">
         <li v-for="user in users" :key="user.id" class="user-item">
           <div class="user-info">
-            <span class="user-name">{{ user.name }}</span>
+            <span class="user-name">{{ user.username }}</span>
             <span class="user-email">{{ user.email }}</span>
           </div>
           <div class="user-actions">
@@ -47,8 +51,9 @@ const users = ref([]);
 const isEditing = ref(false);
 const currentUser = ref({
   id: null,
-  name: '',
-  email: ''
+  username: '',
+  email: '',
+  password: ''
 });
 
 const API_URL = '/api/users';
@@ -96,7 +101,7 @@ async function deleteUser(id) {
 
 function resetForm() {
   isEditing.value = false;
-  currentUser.value = { id: null, name: '', email: '' };
+  currentUser.value = { id: null, username: '', email: '', password: '' };
 }
 
 onMounted(fetchUsers);

@@ -20,7 +20,7 @@ class UserServiceTest {
         PasswordEncoder passwordEncoder = mock(PasswordEncoder.class);
         UserService svc = new UserService(repo, passwordEncoder);
 
-        User u = new User(1L, "John Doe", "john@example.com", "john", "password");
+        User u = new User("1", "John Doe", "john@example.com", "john", "password");
         when(repo.findByUsername(u.getUsername())).thenReturn(Optional.empty());
         when(repo.save(any())).thenAnswer(inv -> inv.getArgument(0));
 
@@ -37,7 +37,7 @@ class UserServiceTest {
         PasswordEncoder passwordEncoder = mock(PasswordEncoder.class);
         UserService svc = new UserService(repo, passwordEncoder);
 
-        User u = new User(1L, "John Doe", "john@example.com", "john", "password");
+        User u = new User("1", "John Doe", "john@example.com", "john", "password");
         when(repo.findByUsername(u.getUsername())).thenReturn(Optional.of(u));
 
         assertThrows(IllegalArgumentException.class, () -> svc.createUser(u));

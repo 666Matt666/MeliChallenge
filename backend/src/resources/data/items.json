@@ -1,0 +1,250 @@
+[
+  {
+    "id": "MLA1",
+    "title": "Auriculares Bluetooth Inalámbricos - Cancelación de ruido",
+    "subtitle": "Hasta 30h • Micrófono integrado • Bluetooth 5.2",
+    "description": "Auriculares inalámbricos con cancelación activa de ruido (ANC), sonido Hi-Fi y 30 horas de batería. Diseño ergonómico, almohadillas de gel y carga rápida USB-C. Incluye estuche y cable USB-C.",
+    "price": 9999.0,
+    "original_price": 12999.0,
+    "currency": "ARS",
+    "condition": "new",
+    "available_quantity": 12,
+    "sold_quantity": 245,
+    "seller": {
+      "id": "seller_1001",
+      "name": "Vendedor Oficial",
+      "rating": {
+        "level": "gold",
+        "score": 4.8,
+        "total_ratings": 2345
+      },
+      "location": {
+        "city": "Buenos Aires",
+        "state": "CABA",
+        "country": "Argentina"
+      }
+    },
+    "pictures": [
+      { "id": "p1", "url": "/images/headphones-1.jpg", "secure_url": "/images/headphones-1.jpg", "size": "1000x1000" },
+      { "id": "p2", "url": "/images/headphones-2.jpg", "secure_url": "/images/headphones-2.jpg", "size": "1000x1000" },
+      { "id": "p3", "url": "/images/headphones-3.jpg", "secure_url": "/images/headphones-3.jpg", "size": "800x800" }
+    ],
+    "images": [ "/images/headphones-1.jpg", "/images/headphones-2.jpg", "/images/headphones-3.jpg" ],
+    "attributes": [
+      { "id": "BRAND", "name": "Marca", "value_name": "SoundTec" },
+      { "id": "BATTERY", "name": "Batería", "value_name": "30 horas" },
+      { "id": "COLOR", "name": "Color", "value_name": "Negro" },
+      { "id": "CONNECTION", "name": "Conectividad", "value_name": "Bluetooth 5.2" }
+    ],
+    "shipping": {
+      "free_shipping": true,
+      "store_pickup": false,
+      "logistic_type": "fulfillment",
+      "estimated_delivery_days": 3,
+      "dimensions": { "width_cm": 18, "height_cm": 10, "depth_cm": 6 },
+      "weight_kg": 0.45
+    },
+    "payment_methods": [
+      { "method": "MercadoPago", "installments_max": 12, "supports_interest_free": true },
+      { "method": "Tarjeta de crédito", "installments_max": 6, "supports_interest_free": false }
+    ],
+    "reviews": {
+      "average": 4.6,
+      "total": 124,
+      "top_review": { "user": "Ana P.", "rating": 5, "text": "Excelente sonido y duración de batería." },
+      "sample_reviews": [
+        { "user": "Carlos", "rating": 4, "text": "Buen producto, llegó rápido." },
+        { "user": "Lucia", "rating": 5, "text": "Super cómodo, la cancelación funciona muy bien." }
+      ]
+    },
+    "warranty": { "type": "manufacturer", "time": "12 meses" },
+    "categories": [ "Electrónica", "Audio" ],
+    "tags": [ "fulfillment", "best_seller", "official_store" ],
+    "highlights": [ "30h batería", "Cancelación activa de ruido", "Micrófono integrado" ],
+    "created_at": "2024-11-10T10:30:00Z"
+  },
+
+  {
+    "id": "MLA2",
+    "title": "Smartphone X - 128GB • Cámara 50MP • Batería 5000mAh",
+    "subtitle": "Pantalla 6.5\" AMOLED • Carga rápida 45W",
+    "description": "Smartphone X con performance de alta gama: 8GB RAM, 128GB almacenamiento, cámara principal 50MP con modo noche, pantalla AMOLED 120Hz. Incluye funda y cargador rápido.",
+    "price": 74999.0,
+    "original_price": 79999.0,
+    "currency": "ARS",
+    "condition": "new",
+    "available_quantity": 5,
+    "sold_quantity": 1020,
+    "seller": {
+      "id": "seller_220",
+      "name": "Store123",
+      "rating": { "level": "silver", "score": 4.5, "total_ratings": 890 },
+      "location": { "city": "Cordoba", "state": "Cordoba", "country": "Argentina" }
+    },
+    "pictures": [
+      { "id": "p1", "url": "/images/phone-1.jpg", "secure_url": "/images/phone-1.jpg", "size":"1200x900" },
+      { "id": "p2", "url": "/images/phone-2.jpg", "secure_url": "/images/phone-2.jpg", "size":"1200x900" },
+      { "id": "p3", "url": "/images/phone-3.jpg", "secure_url": "/images/phone-3.jpg", "size":"1200x900" },
+      { "id": "p4", "url": "/images/phone-4.jpg", "secure_url": "/images/phone-4.jpg", "size":"800x800" }
+    ],
+    "images": [ "/images/phone-1.jpg", "/images/phone-2.jpg", "/images/phone-3.jpg" ],
+    "attributes": [
+      { "id": "BRAND", "name": "Marca", "value_name": "PhoneCorp" },
+      { "id": "RAM", "name": "RAM", "value_name": "8 GB" },
+      { "id": "STORAGE", "name": "Almacenamiento", "value_name": "128 GB" },
+      { "id": "CAMERA", "name": "Cámara", "value_name": "50 MP" }
+    ],
+    "shipping": {
+      "free_shipping": false,
+      "shipping_cost": 799.0,
+      "store_pickup": true,
+      "estimated_delivery_days": 2,
+      "logistic_type": "custom"
+    },
+    "payment_methods": [
+      { "method": "MercadoPago", "installments_max": 18, "supports_interest_free": true },
+      { "method": "Transferencia", "installments_max": 1, "supports_interest_free": false }
+    ],
+    "reviews": { "average": 4.4, "total": 560 },
+    "warranty": { "type": "official", "time": "24 meses" },
+    "categories": [ "Celulares y Teléfonos", "Smartphones" ],
+    "tags": [ "new_arrival", "free_pickup" ],
+    "highlights": [ "Pantalla 120Hz", "Carga 45W", "50MP cámara" ],
+    "created_at": "2025-03-02T08:15:00Z"
+  },
+
+  {
+    "id": "MLA3",
+    "title": "Lámpara de Pie LED Moderna • Regulable",
+    "subtitle": "Iluminación cálida/fría • Control táctil",
+    "description": "Lámpara de pie con regulador táctil de intensidad y cambio de temperatura de color. Ideal para living o estudio. Eficiencia energética (LED). Base estable y diseño minimalista.",
+    "price": 15999.0,
+    "currency": "ARS",
+    "condition": "new",
+    "available_quantity": 20,
+    "sold_quantity": 87,
+    "seller": {
+      "id": "seller_home_55",
+      "name": "CasaLuces",
+      "rating": { "level": "bronze", "score": 4.3, "total_ratings": 210 }
+    },
+    "pictures": [
+      { "id":"p1","url":"/images/lamp-1.jpg","secure_url":"/images/lamp-1.jpg","size":"1000x1000" },
+      { "id":"p2","url":"/images/lamp-2.jpg","secure_url":"/images/lamp-2.jpg","size":"1000x1000" }
+    ],
+    "images": [ "/images/lamp-1.jpg", "/images/lamp-2.jpg" ],
+    "attributes": [
+      { "id":"MATERIAL","name":"Material","value_name":"Aluminio" },
+      { "id":"COLOR","name":"Color","value_name":"Blanco" },
+      { "id":"DIMENSIONS","name":"Dimensiones","value_name":"150 x 25 x 25 cm" }
+    ],
+    "shipping": { "free_shipping": true, "store_pickup": false, "estimated_delivery_days": 5 },
+    "payment_methods": [ { "method":"MercadoPago","installments_max":12 } ],
+    "reviews": { "average": 4.1, "total": 34 },
+    "warranty": { "type":"manufacturer", "time":"6 meses" },
+    "categories": [ "Hogar", "Iluminación" ],
+    "tags": [ "eco_friendly" ],
+    "highlights": [ "Regulable", "LED de bajo consumo" ],
+    "created_at": "2024-09-20T14:00:00Z"
+  },
+
+  {
+    "id": "MLA4",
+    "title": "Zapatillas Running Pro • Hombre",
+    "subtitle": "Amortiguación avanzada • Suela antideslizante",
+    "description": "Zapatillas de running con tecnología de amortiguación ProFoam y suela para terrenos mixtos. Plantilla ergonómica y material transpirable. Disponibles en diferentes talles.",
+    "price": 21999.0,
+    "original_price": 23999.0,
+    "currency": "ARS",
+    "condition": "new",
+    "available_quantity": 40,
+    "sold_quantity": 540,
+    "seller": { "id": "seller_sports_01", "name": "RunStore", "rating": { "level":"gold","score":4.7,"total_ratings":980 } },
+    "pictures": [
+      { "id":"p1","url":"/images/shoes-1.jpg","secure_url":"/images/shoes-1.jpg","size":"1200x800" }
+    ],
+    "images": [ "/images/shoes-1.jpg" ],
+    "attributes": [
+      { "id":"BRAND","name":"Marca","value_name":"RunMax" },
+      { "id":"GENDER","name":"Género","value_name":"Hombre" },
+      { "id":"MATERIAL","name":"Material","value_name":"Malla transpirable" }
+    ],
+    "variations": [
+      { "variation_id":"MLA4-SIZE-40","size":40,"available_quantity":6 },
+      { "variation_id":"MLA4-SIZE-41","size":41,"available_quantity":10 },
+      { "variation_id":"MLA4-SIZE-42","size":42,"available_quantity":12 },
+      { "variation_id":"MLA4-SIZE-43","size":43,"available_quantity":12 }
+    ],
+    "shipping": { "free_shipping": true, "estimated_delivery_days": 4 },
+    "payment_methods": [ { "method":"MercadoPago","installments_max":12 } ],
+    "reviews": { "average": 4.5, "total": 310 },
+    "warranty": { "type":"seller","time":"3 meses" },
+    "categories": [ "Deportes", "Calzado" ],
+    "tags": [ "running", "top_rated" ],
+    "highlights": [ "Amortiguación ProFoam", "Suela antideslizante" ],
+    "created_at": "2024-12-01T11:22:00Z"
+  },
+
+  {
+    "id": "MLA5",
+    "title": "Set LEGO Creator 3-en-1 - Castillo Medieval",
+    "subtitle": "Piezas: 1024 • Edad recomendada 10+",
+    "description": "Set de construcción con más de 1000 piezas para armar un castillo medieval. Incluye instrucciones para 3 modelos distintos, minifiguras y detalles decorativos.",
+    "price": 12999.0,
+    "currency": "ARS",
+    "condition": "new",
+    "available_quantity": 10,
+    "sold_quantity": 198,
+    "seller": { "id":"seller_toys_88","name":"ToyStore","rating":{ "level":"silver","score":4.6,"total_ratings":420 } },
+    "pictures": [
+      { "id":"p1","url":"/images/lego-1.jpg","secure_url":"/images/lego-1.jpg","size":"1000x1000" }
+    ],
+    "images": [ "/images/lego-1.jpg" ],
+    "attributes": [
+      { "id":"PIECES","name":"Piezas","value_name":"1024" },
+      { "id":"AGE_RANGE","name":"Edad recomendada","value_name":"10+" },
+      { "id":"THEME","name":"Tema","value_name":"Medieval" }
+    ],
+    "shipping": { "free_shipping": false, "shipping_cost": 499.0, "estimated_delivery_days": 6 },
+    "payment_methods": [ { "method":"MercadoPago","installments_max":6 } ],
+    "reviews": { "average": 4.9, "total": 76 },
+    "warranty": { "type":"none", "time": "0 meses" },
+    "categories": [ "Juguetes", "Construcción" ],
+    "tags": [ "gift_idea", "educational" ],
+    "highlights": [ "1024 piezas", "3 modelos en 1" ],
+    "created_at": "2024-08-14T09:00:00Z"
+  },
+
+  {
+    "id": "MLA6",
+    "title": "Notebook Ultra 16GB • SSD 512GB • i7",
+    "subtitle": "Pantalla 15.6\" • Windows 11 • Peso 1.4kg",
+    "description": "Notebook Ultra para productividad y diseño: CPU i7, 16GB RAM, SSD NVMe 512GB, pantalla IPS 15.6\" FHD, batería 10h, teclado retroiluminado, lector de huella.",
+    "price": 189999.0,
+    "original_price": 199999.0,
+    "currency": "ARS",
+    "condition": "new",
+    "available_quantity": 3,
+    "sold_quantity": 67,
+    "seller": { "id":"seller_comp_03","name":"CompuWorld","rating":{ "level":"platinum","score":4.9,"total_ratings":1450 } },
+    "pictures": [
+      { "id":"p1","url":"/images/laptop-1.jpg","secure_url":"/images/laptop-1.jpg","size":"1400x900" },
+      { "id":"p2","url":"/images/laptop-2.jpg","secure_url":"/images/laptop-2.jpg","size":"1400x900" }
+    ],
+    "images": [ "/images/laptop-1.jpg", "/images/laptop-2.jpg" ],
+    "attributes": [
+      { "id":"CPU","name":"Procesador","value_name":"Intel i7" },
+      { "id":"RAM","name":"RAM","value_name":"16 GB" },
+      { "id":"STORAGE","name":"Almacenamiento","value_name":"SSD 512 GB" },
+      { "id":"WEIGHT","name":"Peso","value_name":"1.4 kg" }
+    ],
+    "shipping": { "free_shipping": true, "estimated_delivery_days": 2 },
+    "payment_methods": [ { "method":"MercadoPago","installments_max":18 } ],
+    "reviews": { "average": 4.7, "total": 412 },
+    "warranty": { "type":"official","time":"24 meses" },
+    "categories": [ "Computación", "Notebooks" ],
+    "tags": [ "workstation", "bestseller" ],
+    "highlights": [ "i7", "SSD NVMe 512GB", "10h battery" ],
+    "created_at": "2025-01-18T13:45:00Z"
+  }
+]

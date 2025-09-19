@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP:localhost:9092}
+
+jwt:
+  secret: mysecretkeymysecretkey1234567890
+  validity-ms: 3600000
+logging:
+  level:
+    root: INFO
+
+topic:
+  user:
+    created: user-creado

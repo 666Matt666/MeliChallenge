@@ -1,0 +1,20 @@
+# Archivos de IDEs
+.idea/
+*.iml
+.vscode/
+
+# Archivos de compilación y logs de Java/Maven
+/backend/target/
+*.log
+
+# Archivos de compilación y dependencias de Node.js/Vue
+/frontend/node_modules/
+/frontend/dist/
+
+# Archivos de entorno (variables sensibles)
+.env*
+!.env.example
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

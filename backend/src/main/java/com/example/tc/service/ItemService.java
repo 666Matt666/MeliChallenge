@@ -5,7 +5,9 @@ import com.example.tc.model.Item;
 import com.example.tc.repository.ItemRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class ItemService {
@@ -13,6 +15,10 @@ public class ItemService {
 
     public ItemService(ItemRepository repo) {
         this.repo = repo;
+    }
+    
+    public List<ItemDTO> listAll() {
+        return repo.findAll().stream().map(item -> mapToDTO(item, null)).collect(Collectors.toList());
     }
 
     /**
@@ -24,6 +30,23 @@ public class ItemService {
      */
     public Optional<ItemDTO> getItemById(String id, Integer discount) {
         return repo.findById(id).map(item -> mapToDTO(item, discount));
+    }
+
+    public Item createItem(Item item) {
+        return repo.save(item);
+    }
+
+    public Optional<Item> updateItem(String id, Item itemDetails) {
+        return repo.findById(id).map(item -> {
+            item.setTitle(itemDetails.getTitle());
+            item.setPrice(itemDetails.getPrice());
+            // Set other fields as needed
+            return repo.save(item);
+        });
+    }
+
+    public void deleteItem(String id) {
+        repo.deleteById(id);
     }
 
     /**

@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 import java.util.Optional;
 
 @Repository
@@ -19,10 +20,11 @@ public class ItemRepository {
     private List<Item> items = new ArrayList<>();
     private final ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
+    private final ClassPathResource resource = new ClassPathResource("data/items.json");
+
     @PostConstruct
     public void init() {
         try {
-            ClassPathResource resource = new ClassPathResource("data/items.json");
             if (resource.exists()) {
                 InputStream inputStream = resource.getInputStream();
                 items = mapper.readValue(inputStream, new TypeReference<List<Item>>() {});
@@ -40,9 +42,27 @@ public class ItemRepository {
         return items.stream().filter(i -> i.getId().equals(id)).findFirst();
     }
     
-    public Item save(Item item) throws Exception {
+    public Item save(Item item) {
+        if (item.getId() == null) {
+            item.setId(UUID.randomUUID().toString());
+        }
+        // Upsert logic
+        items.removeIf(i -> i.getId().equals(item.getId()));
         items.add(item);
-        // mapper.writeValue(file, items); // Esta línea causaba el error de compilación
+        persist();
         return item;
+    }
+
+    public void deleteById(String id) {
+        items.removeIf(i -> i.getId().equals(id));
+        persist();
+    }
+
+    private void persist() {
+        try {
+            mapper.writerWithDefaultPrettyPrinter().writeValue(resource.getFile(), items);
+        } catch (Exception e) {
+            System.err.println("Failed to persist items.json. Changes will be lost on restart. Error: " + e.getMessage());
+        }
     }
 }

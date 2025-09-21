@@ -1,5 +1,6 @@
 package com.example.tc.dto;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class ItemDTO {
@@ -8,7 +9,7 @@ public class ItemDTO {
     private String subtitle;
     private String description;
     private double price;
-    private Double discountedPrice;
+    private BigDecimal discountedPrice; // Nuevo campo para el precio con descuento
     private String currency;
     private int availableQuantity;
     private String condition;
@@ -22,7 +23,7 @@ public class ItemDTO {
     public ItemDTO() {}
 
     public ItemDTO(String id, String title, String subtitle, String description,
-                   double price, Double discountedPrice, String currency, int availableQuantity,
+                   double price, BigDecimal discountedPrice, String currency, int availableQuantity,
                    String condition, String sellerName, double sellerScore,
                    List<String> images, double averageReview, int totalReviews,
                    List<String> highlights) {
@@ -59,8 +60,8 @@ public class ItemDTO {
     public double getPrice() { return price; }
     public void setPrice(double price) { this.price = price; }
 
-    public Double getDiscountedPrice() { return discountedPrice; }
-    public void setDiscountedPrice(Double discountedPrice) { this.discountedPrice = discountedPrice; }
+    public BigDecimal getDiscountedPrice() { return discountedPrice; }
+    public void setDiscountedPrice(BigDecimal discountedPrice) { this.discountedPrice = discountedPrice; }
 
     public String getCurrency() { return currency; }
     public void setCurrency(String currency) { this.currency = currency; }

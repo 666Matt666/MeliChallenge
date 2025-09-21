@@ -1,6 +1,8 @@
 package com.example.tc.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
@@ -28,7 +30,7 @@ public class Item {
     private List<String> tags;
     private List<String> highlights;
     private String created_at;
-    private Double discountedPrice;
+    private BigDecimal discountedPrice; // Nuevo campo para el precio con descuento
 
     // Getters and Setters for all fields
 
@@ -98,8 +100,8 @@ public class Item {
     public String getCreated_at() { return created_at; }
     public void setCreated_at(String created_at) { this.created_at = created_at; }
 
-    public Double getDiscountedPrice() { return discountedPrice; }
-    public void setDiscountedPrice(Double discountedPrice) { this.discountedPrice = discountedPrice; }
+    public BigDecimal getDiscountedPrice() { return discountedPrice; }
+    public void setDiscountedPrice(BigDecimal discountedPrice) { this.discountedPrice = discountedPrice; }
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Seller {
